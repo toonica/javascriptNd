@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>Widget Random Colors</title>
+	<link href="css/style.css" rel="stylesheet">
+	
+	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.js"></script>
+	
+	<script src="js/colors-widget.js"></script>
+	<script>
+		$(function() {
+
+			$( "#color-widget1" ).randomColors();
+		
+			$( "#color-widget2" ).randomColors({
+				defaultColor: "green",
+			});
+
+		});
+	</script>
+	
+</head>
+<body>
+
+	<div id="color-widget1"></div>
+	<div id="color-widget2"></div>
+
+</body>
+</html>
